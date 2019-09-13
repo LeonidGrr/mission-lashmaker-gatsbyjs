@@ -1,14 +1,15 @@
 {
-  "name": "gatsby-starter-dimension-v2",
-  "description": "Gatsby Starter - Dimension V2",
+  "name": "mission-lashmaker-gatsbyjs",
+  "description": "Portfolio for beauty professional",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Leonid G",
   "dependencies": {
     "gatsby": "^2.2.9",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sass": "^2.0.11",
+    "gatsby-source-filesystem": "^2.1.22",
     "node-sass": "^4.11.0",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
@@ -29,6 +30,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/LeonidGrr/mission-lashmaker-gatsbyjs"
   }
 }

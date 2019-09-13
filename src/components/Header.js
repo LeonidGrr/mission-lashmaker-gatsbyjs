@@ -1,15 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Header = (props) => (
+const Header = props => (
     <header id="header" style={props.timeout ? { display: 'none' } : {}}>
         <div className="logo">
             <span className="icon fa-diamond"></span>
         </div>
         <div className="content">
             <div className="inner">
-                <h1>Профессиональное наращивание и ламинирование ресниц</h1>
-                <p>A fully responsive site template designed by</p>
+                <h1>Александра Гребенщикова</h1>
+                <p>Профессиональное наращивание и ламинирование ресниц</p>
             </div>
         </div>
         <nav>
@@ -22,11 +22,11 @@ const Header = (props) => (
             </ul>
         </nav>
     </header>
-)
+);
 
 Header.propTypes = {
     onOpenArticle: PropTypes.func,
     timeout: PropTypes.bool
-}
+};
 
-export default Header
+export default Header;
