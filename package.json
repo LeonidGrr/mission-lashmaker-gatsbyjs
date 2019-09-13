@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Leonid G",
   "dependencies": {
+    "disqus-react": "^1.0.7",
     "gatsby": "^2.2.9",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",

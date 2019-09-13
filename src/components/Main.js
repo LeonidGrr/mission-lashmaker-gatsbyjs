@@ -1,6 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
+import { DiscussionEmbed } from 'disqus-react';
+
+const disqusConfig = {
+    shortname: "sasha-lashmaker",
+    config: { identifier: "reviews" },
+}
 
 const Main = props => {
     const data = useStaticQuery(graphql`
@@ -82,7 +88,7 @@ const Main = props => {
 
             <article id="reviews" className={`${article === 'reviews' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
                 <h2 className="major">Ваши отзывы</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+                    <DiscussionEmbed {...disqusConfig} />
                 {close}
             </article>
 
