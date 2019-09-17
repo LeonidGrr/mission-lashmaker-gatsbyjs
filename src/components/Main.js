@@ -2,6 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import { DiscussionEmbed } from 'disqus-react';
+import SocialExpert from '../svg/social-expert';
+import Discount from '../svg/discount';
+import Resume from '../svg/resume';
+import Superwoman from '../svg/superwoman';
+import Thanks from '../svg/thanks';
 
 const disqusConfig = {
     shortname: "sasha-lashmaker",
@@ -41,6 +46,7 @@ const Main = props => {
                         return <span key={certificate.name} className="image main"><img src={`${certificate.publicURL}`} alt={`${certificate.name}`} /></span>
                     })
                 }
+                <Resume />
                 {close}
             </article>
 
@@ -51,6 +57,7 @@ const Main = props => {
                         return <span key={photo.name} className="image main"><img src={`${photo.publicURL}`} alt={`${photo.name}`} /></span>
                     })
                 }
+                <Superwoman />
                 {close}
             </article>
 
@@ -83,12 +90,14 @@ const Main = props => {
                         <br/>
                         <li>Окрашивание бровей - 400 рублей</li>
                 </ul>
+                <Discount />
                 {close}
             </article>
 
             <article id="reviews" className={`${article === 'reviews' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
                 <h2 className="major">Ваши отзывы</h2>
-                    <DiscussionEmbed {...disqusConfig} />
+                <DiscussionEmbed {...disqusConfig} />
+                <Thanks />
                 {close}
             </article>
 
@@ -99,12 +108,12 @@ const Main = props => {
                 <p>Cалон красоты "Для Вас" </p>
                 <h3>Записывайтесь по телефону</h3>
                 <h2>+79773317782</h2>
-                <hr/>
                 <ul className="icons">
                     <li><a href="https://wa.me/79773317782" className="icon fa-whatsapp"><span className="label">Whatsapp</span></a></li>
                     <li><a href="https://www.instagram.com/sasha.lashmaker/" className="icon fa-instagram"><span className="label">Instagram</span></a></li>
                     <li><a href="https://github.com/LeonidGrr/mission-lashmaker-gatsbyjs" className="icon fa-github"><span className="label">GitHub</span></a></li>
                 </ul>
+                <SocialExpert />
                 {close}
             </article>
         </div>
