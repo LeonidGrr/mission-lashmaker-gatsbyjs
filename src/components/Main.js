@@ -64,7 +64,7 @@ const Main = props => {
             <article id="pricing" className={`${article === 'pricing' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
                 <h2 className="major">Список услуг<br/> и цены</h2>
                 <ul>
-                        <li>Неполный объем - 1400 рублей</li>
+                        <li>Неполный объем - 1600 рублей</li>
                         <br/>
                         <li>Классическое наращивание ресниц - 1800 рублей</li>
                         <br/>
@@ -103,7 +103,8 @@ const Main = props => {
 
             <article id="contact" className={`${article === 'contact' ? 'active' : ''} ${articleTimeout ? 'timeout' : ''}`} style={{ display: 'none' }}>
                 <h2 className="major">Контакты</h2>
-                <p>Москва, Тропарево-Никулино, станция метро "Озёрная" </p>
+                <p>Москва, Тропарево-Никулино</p>
+                <p>станции метро "Озёрная", "Юго-Западная"</p>
                 <p>ул.Никулинская д.23/1</p>
                 <p>Cалон красоты "Для Вас" </p>
                 <h3>Записывайтесь по телефону</h3>
