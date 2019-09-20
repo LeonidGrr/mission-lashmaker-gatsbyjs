@@ -46,9 +46,9 @@
 				'transform #{_duration(article)} ease-in-out',
 				'filter #{_duration(article)} ease-in-out'
 			));
-			background-image:		url('../../images/bg1.jpg');
+			background-image:		url('../../images/bg3.jpg');
 			background-position:	center;
-			background-size:		cover;
+			background-size:		contain;
 			background-repeat:		no-repeat;
 			z-index: 1;
 		}
